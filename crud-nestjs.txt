@@ -1,0 +1,25 @@
+//========================= Criando CRUD básico com NestJS
+
+	-> necessário adicionar a dependência global do nest via npm, para utilizar os comandos via cli;
+	
+		- Comando: npm i -g @nestjs/cli
+		
+	-> Após essa pré configuração, basta criar o projeto com o comando: nest new "nome-do-projeto";
+	
+		- O projeto virá com toda pré-configuração de estrutura que o framework NestJS utiliza;
+		
+		- Essa estrutura é baseada no arquivo app.module.ts, que é toda a base para o pleno funcionamento do framework. Nele, tem referência a todas as demais classes, o que permite o funcionamento da injeção de dependências;
+		
+		- A controller e service autogerada ao criar o projeto, bem como seus testes, podem ser removidas do projeto;
+		
+	-> Para criar a estrutura de cada um dos CRUD's de seu sistema, basta utilizar o comando: nest g resource;	
+	
+		- Será necessário definir um nome desse resource, bem como a estratégia dos entry points gerados;
+	
+		- para cada "CRUD" da aplicação, é necessário um module.ts, que cria o relacionamento entre eles;
+		
+	
+	Com esse framework, muitas das configurações base do projeto já vêm predefinidas, seguindo boas práticas de programação. É bem útil para entrega ágil, mas pode aumentar o grau de complexidade e pode não ser necessário em alguns tipos de projetos.
+	
+	
+	Link com a collection do postman, utilizada para testar as requisições para a API: https://www.getpostman.com/collections/9b48c6b87501f96700fb
